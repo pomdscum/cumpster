@@ -1,0 +1,70 @@
+<!doctype html>
+
+<head>
+    <title>Garlic Bread Till Im Dead</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    var imgs = [
+        'logo/hoodie1.png', 'logo/hoodie34.png', 'logo/hoodie209.png', 'logo/hoodie4003.png', 'logo/mugWhite.png', 'logo/phonecase.png',
+    ];
+
+ 
+
+    var slideCounter = 1;
+
+ 
+
+    function change() {
+        slideCounter++;
+        document.getElementById('slider').src = imgs[slideCounter]
+
+ 
+
+
+        if (slideCounter > 4) {
+            slideCounter = 0;
+        }
+    };
+    </script>
+
+ 
+
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="products.html">Store</a>
+            <a href="contact.html">Checkout</a>
+        </nav>
+        <img class="logo" src="logo/logo2.jpg">
+    </header>
+ 
+
+    <section>
+    <img id='slider' onclick="change()" src='logo/hoodie1.png'>
+        <div class="left">
+            <h1>Hoodies</h1>
+            <p>4 Colours!</p>
+        </div>
+        <div class="right">
+            <h1>Mugs</h1>
+            <p>1 Colours!</p>
+        </div>
+    </section>
+</body>
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
